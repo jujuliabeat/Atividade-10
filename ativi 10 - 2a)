@@ -5,7 +5,7 @@ programa
 		inteiro n = 21
 		enquanto (n>1){
 		    n--
-		    escreva(n, " ")
+		    escreva(n, "\n")
 		}
 		
 	}
