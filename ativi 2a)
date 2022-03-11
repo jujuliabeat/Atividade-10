@@ -1,0 +1,12 @@
+programa 
+{
+	funcao inicio() 
+	{
+		inteiro n = 21
+		enquanto (n>1){
+		    n--
+		    escreva(n, " ")
+		}
+		
+	}
+}
