@@ -1,0 +1,36 @@
+funcao inicio()
+	{
+		real populacaoA, populacaoB, porcentoA, porcentoB
+		escreva ("Digite a população atual de A: ")
+		leia(populacaoA)
+
+		escreva ("Digite a população atual de B: ")
+		leia(populacaoB)
+
+		escreva ("Digite o número de crescimento anual da População A em porcentagem: ")
+		leia(porcentoA)
+
+		escreva ("Digite o número de crescimento anual da População B em porcentagem: ")
+		leia(porcentoB)
+
+
+		real crescimentoA = (populacaoA / 100) * porcentoA
+		real crescimentoB = (populacaoB / 100) * porcentoB
+		inteiro anos = 0
+
+			se(crescimentoA<crescimentoB){
+				        para (crescimentoA ; populacaoA <= populacaoB ; populacaoA = ((populacaoA / 100) * porcentoA) + populacaoA){
+				        populacaoB = ((populacaoB / 100) * porcentoB) + populacaoB
+				        anos = anos +1
+				        escreva ("\n","População A = ", populacaoA ,"\n","População B = ", populacaoB,"\n","\n")
+			}
+			}senao{
+				para (crescimentoB ; populacaoB <= populacaoA ; populacaoB = ((populacaoB / 100) * porcentoB) + populacaoB){
+				populacaoA = ((populacaoA / 100) * porcentoA) + populacaoA
+				anos = anos +1
+				escreva ("\n","População B = ", populacaoB ,"\n","População A = ", populacaoA,"\n","\n")}
+		
+		        escreva ("\n","População A = ", populacaoA ,"\n","População B = ", populacaoB,"\n","\n")}
+		        escreva("Se passaram ",anos," anos para a População A se igualar ou ser maior que População B")
+	}
+}
