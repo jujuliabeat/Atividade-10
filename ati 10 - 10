@@ -1,0 +1,22 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		real ppA = 80000.0
+		real ppB = 200000.0
+
+		real cresA = (ppA / 100) * 3
+		real cresB = (ppB / 100) * 1.5
+		    inteiro anos = 0
+
+			para (cresA ; ppA <= ppB ; ppA = ((ppA / 100) * 3) + ppA){
+				ppB = ((ppB / 100) * 1.5) + ppB
+				    anos = anos +1
+				    escreva ("\n", " População de A = ", ppA ,"\n"," População de B = ", ppB,"\n","\n")
+			}
+		
+		            escreva ("\n"," População de A = ", ppA ,"\n"," População de B = ", ppB,"\n","\n")
+		            escreva(" Faltam ",anos," anos para atingir B")
+	}
+}
