@@ -1,0 +1,42 @@
+programa 
+{    
+    inclua biblioteca Texto --> t
+	funcao inicio() 
+	{
+		cadeia nome,idd,ss
+		inteiro numero_deletras
+        
+		escreva(" Digite seu nome, no mínimo 3 caracteres: ")
+		leia(nome)
+		
+		numero_deletras = t.numero_caracteres(nome)
+		//escreva("Seu nome contém " + numero_deletras + " Letras  ")
+		
+	        para(inteiro i = numero_deletras; i <= 3; i++)
+	        {
+	            escreva("- Inválido")
+	            escreva("\n")
+	            
+		    }
+		escreva(" Insira sua idade: ")
+		leia(idd)
+		
+		para(inteiro j= 1; j > 150; j++)
+		{
+		    escreva(" - Impossível")
+		    escreva("\n")
+	    }
+	    escreva(" Digite o valor de seu salário: ")
+	    leia(ss)
+	    
+	    para(inteiro x= 0; x <= 0; x++)
+		{
+		    escreva(" - Que vida triste né amigo? ")
+		    escreva("\n")
+	    
+    }
+       
+
+
+}
+}
